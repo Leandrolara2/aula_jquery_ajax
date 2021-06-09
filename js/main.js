@@ -7,11 +7,16 @@ function consultaCep(){
         type: "GET",
         success: function(response){
             console.log(response);
+            $("#titulo_cep").html("CEP: " + response.cep);
             $("#logradouro").html(response.logradouro);
-            //document.getElementById("logradouro").innerHTML = response.logradouro;
-            document.getElementById("Bairro").innerHTML = response.bairro;
+            $("#bairro").html(response.bairro);
             $("#localidade").html(response.localidade);
-            document.getElementById("uf").innerHTML = response.uf;
+            $("#uf").html(response.uf);
+            //$("#logradouro").html(response.logradouro);
+            //document.getElementById("logradouro").innerHTML = response.logradouro;
+            //ocument.getElementById("Bairro").innerHTML = response.bairro;
+            //$("#localidade").html(response.localidade);
+            //document.getElementById("uf").innerHTML = response.uf;
             //alert(response.logradouro);
         }
     })
