@@ -13,6 +13,8 @@ function consultaCep(){
             $("#bairro").html(response.bairro);
             $("#localidade").html(response.localidade);
             $("#uf").html(response.uf);
+            $("#ddd").html(response.ddd);
+            $("#ibge").html(response.ibge);
             $(".cep").show();
             $(".barra-progresso").hide();
             //$("#logradouro").html(response.logradouro);

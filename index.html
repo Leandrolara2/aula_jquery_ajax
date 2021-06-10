@@ -6,6 +6,7 @@
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
@@ -13,7 +14,7 @@
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand text-white">Consulta CEP</a>
         <div class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="CEP" id="cep"> 
+            <input class="form-control me-2" type="search" placeholder="00000-000" id="cep"> 
             <button class="btn btn-outline-success my-2 my-sm-0"onclick="consultaCep()">Buscar</button>
         </div>
     </nav>
@@ -31,27 +32,40 @@
             <table class="table">
                 <tbody>
                     <tr>
-                        <td>Logradouro</td>
+                        <td class="bg-vermelho">Logradouro</td>
                         <td id="logradouro"></td>
                     </tr>
                     
                     <tr>
-                        <td>Bairro</td>
+                        <td class="bg-vermelho">Bairro</td>
                         <td id="bairro"></td>
                     </tr>
                     
                     <tr>
-                        <td>Localidade</td>
+                        <td class="bg-vermelho">Localidade</td>
                         <td id="localidade"></td>
                     </tr>
                     <tr>
-                        <td>UF</td>
+                        <td class="bg-vermelho">UF</td>
                         <td id="uf"></td>
                     </tr>
+                    <tr>
+                        <td class="bg-vermelho">DDD</td>
+                        <td id="ddd"></td>
+                    </tr>
+                    <tr>
+                        <td class="bg-vermelho">IBGE</td>
+                        <td id="ibge"></td>
+
+                    </tr>
+
                 </tbody>
 
             </table>
         </div>
     </div>
+    <footer class="container-fluid text-center bg-footer margin">
+        <p>Desenvolvido por Leandro Lara</p><br>
+    </footer>
 </body>
-</html>
+</html> 

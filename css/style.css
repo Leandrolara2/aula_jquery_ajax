@@ -1,0 +1,11 @@
+.bg-footer {
+    background-color: black;
+    color: white;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.bg-vermelho {
+    color: rgb(241, 10, 10);
+}
